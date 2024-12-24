@@ -25,7 +25,15 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   margin: 2% auto;
 }
-
+.name{
+  font-family: "AbhayaR";
+  text-align: center;
+  direction: rtl;
+  letter-spacing: 0.1rem;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 2% auto;
+}
 .arrowContainer {
   display: flex;
   justify-content: center;
@@ -54,6 +62,9 @@
   .title {
     font-size: 1.8rem;
   }
+  .name{
+    font-size: 2rem;
+  }
   .row {
     margin: 4% auto;
   }
@@ -68,6 +79,9 @@
   .title {
     font-size: 2rem;
   }
+  .name{
+    font-size: 2.2rem;
+  }
 }
 
 /* 450px - 550px */
@@ -78,6 +92,9 @@
   }
   .title {
     font-size: 2.2rem;
+  }
+  .name{
+    font-size: 2.4rem;
   }
 }
 
@@ -90,6 +107,9 @@
   .title {
     font-size: 2.3rem;
   }
+  .name{
+    font-size: 2.5rem;
+  }
 }
 
 /* 650px - 750px */
@@ -100,6 +120,9 @@
   }
   .title {
     font-size: 2.4rem;
+  }
+  .name{
+    font-size: 2.6rem;
   }
 }
 
@@ -112,6 +135,9 @@
   .title {
     font-size: 2.45rem;
   }
+  .name{
+    font-size: 2.65rem;
+  }
 }
 
 /* 850px - 950px */
@@ -122,6 +148,9 @@
   }
   .title {
     font-size: 2.47rem;
+  }
+  .name{
+    font-size: 2.67rem;
   }
 }
 
@@ -134,6 +163,9 @@
   .title {
     font-size: 2.48rem;
   }
+  .name{
+    font-size: 2.68rem;
+  }
 }
 
 /* 1050px - 1150px */
@@ -145,6 +177,9 @@
   .title {
     font-size: 2.49rem;
   }
+  .name{
+    font-size: 2.69rem;
+  }
 }
 
 /* 1150px - 1250px */
@@ -155,5 +190,8 @@
   }
   .title {
     font-size: 2.5rem;
+  }
+  .name{
+    font-size: 2.7rem;
   }
 }

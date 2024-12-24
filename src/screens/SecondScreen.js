@@ -37,6 +37,8 @@ const SecondScreen=()=>{
     <div className={styles.title}>לפני 10 שנים</div>
     <div className={styles.description}>הייתי בדיוק במקום שלך! רציתי לקחת את האהבה שלי צעד אחד קדימה וכשעשיתי את הצעד והתחלתי ללמוד את התחום גיליתי שחסרים לי הרבה דברים חשובים בדרך</div>
     <div className={styles.title}>וזה הוביל אותי לפתוח את </div>
+    <h1 className={styles.name}>JUMP IN</h1>
+    <div className={styles.description}>מוכנה לקפוץ פנימה??</div>
     <div className={styles.arrowContainer}>
           <ChevronDown size={32} className={styles.bounceArrow} strokeWidth={1}/>
         </div>

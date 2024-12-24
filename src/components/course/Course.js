@@ -22,6 +22,8 @@ import {
   Ruler,
   Share2
 } from 'lucide-react';
+import { FaBusinessTime, FaCertificate, FaInstagram } from 'react-icons/fa';
+import { GiFinishLine } from 'react-icons/gi';
 
 const Course = () => {
   useEffect(() => {
@@ -51,15 +53,15 @@ const Course = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.mainTitle}>קורס לק ג'ל למתחילות</h1>
-      
+      <h1 className={styles.mainTitle}>קורס מתחילות לק ג'ל</h1>
+
       <div className={styles.infoSection}>
         <div className={styles.infoBox}>
           <h2 className={styles.title}>למי מיועד הקורס?</h2>
           <ul className={styles.list}>
             <li>מי שיש לה תשוקה לתחום הציפורניים והיתה רוצה להפוך את התחום למקצוע!</li>
             <li>מי שרוצה להיות עצמאית והאחראית היחידה לקריירה המקצועית שלה</li>
-            <li>מי שהתשובה לה להיות הבוס של עצמה</li>
+            <li>מי שחשוב לה להיות הבוס של עצמה</li>
           </ul>
         </div>
       </div>
@@ -68,7 +70,7 @@ const Course = () => {
         <h2 className={styles.curriculumTitle}>תוכנית הלימוד:</h2>
         <div className={styles.sessions}>
           <div className={styles.session}>
-            <h3>שיעור ראשון - תאורטי</h3>
+            <h3>שיעור ראשון - היכרות + תאורטי</h3>
             <ul>
               <li>
                 <Fingerprint className={styles.topicIcon} size={16} />
@@ -104,6 +106,10 @@ const Course = () => {
           <div className={styles.session}>
             <h3>שיעור שני - מעשי</h3>
             <ul>
+            <li>
+                <Microscope className={styles.topicIcon} size={16} />
+             חזרה על החומר התיאורטי מהשיעור הקודם
+              </li>
               <li>
                 <Hammer className={styles.topicIcon} size={16} />
                 הכנה של כלי העבודה וסביבת עבודה
@@ -137,12 +143,19 @@ const Course = () => {
               <li>
                 <ClipboardCheck className={styles.topicIcon} size={16} />
                 יישום הטכניקה לפי כל השלבים שנלמדו:
-                שיוף צורה, הכנת הציפורן, הסרת חלק, דחיפת עור נכונה
-                מבנה אנטומי, מריחה עמודה וצילום
+                הסרה נכונה, התאמת הצורה למבנה הציפורן,כל שלבי המניקור,מבנה אנטומי ומריחה צמודה לקוטיקולה,
               </li>
               <li>
                 <Paintbrush className={styles.topicIcon} size={16} />
-                מריחה צמודה לקוטיקולה צילום העבודה
+               תרגול השלמת ציפורן בטיפס הפוך בשיטה החדשנית
+              </li>
+              <li>
+                <FaInstagram className={styles.topicIcon} size={16} />
+           צילום אינסטגרמי
+              </li>
+              <li>
+                <FaBusinessTime className={styles.topicIcon} size={16} />
+    מעבר על השלבים לפתיחת עסק
               </li>
             </ul>
           </div>
@@ -150,13 +163,22 @@ const Course = () => {
           <div className={styles.session}>
             <h3>שיעור רביעי - מעשי</h3>
             <ul>
-              <li>
+            <li>
                 <ClipboardCheck className={styles.topicIcon} size={16} />
-                יישום הטכניקה לפי כל השלבים שלמדנו :מניקור מכשירי, גזירה בצבתית/מספריים, בנייה בג׳ל/מילוי
+                יישום הטכניקה לפי כל השלבים שנלמדו:
+                הסרה נכונה, התאמת הצורה למבנה הציפורן,כל שלבי המניקור,מבנה אנטומי ומריחה צמודה לקוטיקולה,
               </li>
               <li>
                 <Camera className={styles.topicIcon} size={16} />
-                מבנה אנטומי מריחה צמודה לקוטיקולה צילום העבודה
+               צילום עבודת גמר
+              </li>
+              <li>
+                <ClipboardCheck className={styles.topicIcon} size={16} />
+             טיפים להתנהלות נכונה ברשתות החברתיות
+              </li>
+              <li>
+                <GiFinishLine className={styles.topicIcon} size={16} />
+       שיחת סיום וקבלת תעודה
               </li>
             </ul>
           </div>
