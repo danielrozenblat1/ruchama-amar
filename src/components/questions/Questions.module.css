@@ -1,0 +1,121 @@
+/* FAQItem.module.css */
+.faqItem {
+  margin: 1.5rem auto;
+  border: 1px solid #E5D1CA;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 500px;
+  direction: rtl;
+  box-shadow: 0 4px 6px rgba(229, 209, 202, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #FDF8F6;  /* רקע בהיר מאוד שמתאים לצבעים החדשים */
+}
+
+.faqItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(229, 209, 202, 0.3);
+}
+
+.questionButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.25rem;
+  background-color: #ffffff;
+  border: none;
+  text-decoration: none;
+  color: #A6766A;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.questionButton:hover {
+  background-color: #EBD9D3;
+}
+
+.questionButton.active {
+  background-color: #A6766A;
+  color: #FDF8F6;
+}
+
+.questionText {
+  font-family: 'AssistantR', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 500;
+  flex-grow: 1;
+}
+
+.iconWrapper {
+  width: 24px;
+  flex-shrink: 0;
+  color: currentColor;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.answerContainer {
+  overflow: hidden;
+  transition: height 0.3s ease, background-color 0.3s ease;
+  background-color: #FDF8F6;
+}
+
+.answerText {
+  font-family: 'AssistantR', sans-serif;
+  font-size: 1.1rem;
+  padding: 1.5rem;
+  color: #A6766A;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0;
+}
+
+.answerText a, 
+.answerText strong {
+  color: #A6766A;
+  font-weight: 600;
+}
+
+@media (max-width: 350px) {
+  .faqItem {
+    width: 280px;
+  }
+  .questionText {
+    font-size: 1rem;
+  }
+  .answerText {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 450px) {
+  .faqItem {
+    width: 320px;
+  }
+  .questionText {
+    font-size: 1.05rem;
+  }
+  .answerText {
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 550px) {
+  .faqItem {
+    width: 400px;
+  }
+  .questionText {
+    font-size: 1.1rem;
+  }
+  .answerText {
+    font-size: 1rem;
+  }
+}
